@@ -1,0 +1,16 @@
+[package]
+name = "crumbs"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "cr"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+chrono = { version = "0.4", features = ["clock"] }
+clap = { version = "4", features = ["derive"] }
+csv = "1"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
